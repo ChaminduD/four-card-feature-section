@@ -2,43 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(0, 0%, 98%);
+    }
+    header{
+      margin-top: 70px;
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: center;
+    }
+    header h1{
+      font-size: 24px;
+      color: hsl(234, 12%, 34%);
+    }
+    header h1 span{
+      font-weight: 200;
+    }
+    header p{
+      font-size: 15px;
+      color: hsl(229, 6%, 66%);
+      padding-top: 18px;
+    }
+    main{
+      margin: 60px 30px;
+    }
+    section{
+      background-color: hsl(0, 0%, 100%);
+      padding: 30px;
+      margin-bottom: 26px;
+      border-radius: 8px;
+      box-shadow: 0 10px 24px hsla(234, 12%, 34%, 0.2);
+      overflow: auto;
+    }
+    #section-1{
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    #section-2{
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    #section-3{
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    #section-4{
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+    section h2{
+      font-size: 20px;
+      color: hsl(234, 12%, 34%);
+      margin-top: -4px;
+    }
+    section p{
+      color: hsl(229, 6%, 66%);
+      font-size: 13px;
+      padding-top: 6px;
+      padding-bottom: 38px;
+      line-height: 22px;
+    }
+    section img{
+      float: right;
+      width: 56px;
+    }
+    .attribution{
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a{
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer{
+      margin: 30px 10px 10px;
+    }
+
+    @media only screen and (min-width:960px){
+      body{
+        max-height: 100vh;
+      }
+      header h1{
+        font-size: 36px;
+        line-height: 50px;
+      }
+      header p{
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+      main{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      section{
+        width: 350px;
+      }
+      #section-2,
+      #section-3{
+        position: absolute;
+      }
+      #section-1{
+        margin-right: 205px;
+        margin-top: 140px;
+      }
+      #section-4{
+        margin-left: 205px;
+        margin-top: 140px;
+      }
+      #section-3{
+        margin-top: 388px;
+        margin-bottom: 0;
+      }
+      #section-2{
+        margin-top: -140px;
+        margin-bottom: 0;
+      }
+      footer{
+        position: relative;
+        margin-top: 166px;
+        padding-bottom: 10px;
+      }
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1><span>Reliable, efficient delivery</span><br>Powered by Technology</h1>
+
+    <p>Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+  </header>
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <main>
+    <section id="section-1">
+      <h2>Supervisor</h2>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img src="images/icon-supervisor.svg" alt="Supervisor Icon">
+    </section>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <section id="section-2">
+      <h2>Team Builder</h2>
+      <p>Scans our talent network to create the optimal team for your project</p>
+      <img src="images/icon-team-builder.svg" alt="Team Builder Icon">
+    </section>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <section id="section-3">
+      <h2>Karma</h2>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img src="images/icon-karma.svg" alt="Karma Icon">
+    </section>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+    <section id="section-4">
+      <h2>Calculator</h2>
+      <p>Uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="Calculator Icon">
+    </section>
+  </main>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.linkedin.com/in/chamindudahanayaka/">Chamindu Dahanayaka</a>.
     </p>
   </footer>
 </body>
